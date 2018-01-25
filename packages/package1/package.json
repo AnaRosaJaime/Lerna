@@ -1,13 +1,15 @@
 {
   "name": "package1",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "echo \"Prepublishing package 1\" > prepublish.txt",
+    "prepare": "echo \"Preparing package 1\" > prepare.txt"
   },
   "dependencies": {
-    "package-core": "^0.1.0"
+    "package-core": "^0.1.1"
   },
   "author": "",
   "license": "MIT"
