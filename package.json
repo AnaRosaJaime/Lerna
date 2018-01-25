@@ -1,5 +1,10 @@
 {
-	"devDependencies": {
-		"lerna": "^2.8.0"
-	}
+  "name": "lerna-monorepo-poc",
+  "version": "0.0.1",
+  "devDependencies": {
+    "lerna": "^2.8.0"
+  },
+  "publishConfig": {
+    "registry": "http://repository.kiosk.roche.com/api/npm/npm-test/"
+  }
 }
