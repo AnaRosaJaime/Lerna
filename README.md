@@ -13,7 +13,7 @@ npm install --global lerna
 
 The main commands in Lerna are `lerna boostrap` and `lerna publish`
 
-*bootstrap*:
+**bootstrap**:
 
 ```
 lerna bootstrap
@@ -27,7 +27,7 @@ When run, this command will:
     3. npm run prepublish in all bootstrapped packages.
     4. npm run prepare in all bootstrapped packages.
 
-*publish*:
+**publish**:
 
 ```
 lerna publish

@@ -2,7 +2,10 @@
   "private": true,
   "scripts": {
 	"postinstall": "lerna clean && lerna bootstrap",
-	"publish": "lerna publish",
+	"publish": "lerna publish --conventional-commits",
 	"publish-packages:prerelease": "lerna publish --npm-tag:prerelease"
+  },
+  "publishConfig": {
+    "registry": "http://repository.kiosk.roche.com/api/npm/npm-test/"
   }
 }
