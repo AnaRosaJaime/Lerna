@@ -1,13 +1,13 @@
 {
   "name": "package1",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "package-core": "^0.0.7"
+    "package-core": "^0.0.8"
   },
   "author": "",
   "license": "MIT"
