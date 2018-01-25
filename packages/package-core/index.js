@@ -1,1 +1,1 @@
-export const text = 'This is a message from package core';
+exports.text = 'This is a message from package core';
