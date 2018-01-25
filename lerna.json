@@ -3,5 +3,10 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.9"
+  "commands": {
+    "publish": {
+      "allowBranch": "master"
+    }
+  },
+  "version": "0.0.10"
 }
