@@ -1,11 +1,17 @@
 {
+  "name": "lerna-mono-repo-poc",
   "private": true,
   "scripts": {
-	"postinstall": "lerna clean && lerna bootstrap",
-	"publish": "lerna publish --conventional-commits",
-	"publish-packages:prerelease": "lerna publish --npm-tag:prerelease"
+    "postinstall": "lerna clean --yes && lerna bootstrap",
+    "publish": "lerna publish --conventional-commits --cd-version=patch --yes",
+    "publish:minor": "lerna publish --conventional-commits --cd-version=minor --yes",
+    "publish:prerelease": "lerna publish --conventional-commits --cd-version=prerelease --yes",
+    "publish:release": "lerna publish --conventional-commits --cd-version=major --yes"
   },
   "publishConfig": {
     "registry": "http://repository.kiosk.roche.com/api/npm/npm-test/"
+  },
+  "devDependencies": {
+    "package-dev": "0.0.1"
   }
 }
