@@ -1,14 +1,8 @@
 {
-  "name": "lerna-monorepo-poc",
-  "version": "0.0.1",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-	"postinstall": "lerna bootstrap",
-	"publish-packages": "lerna publish",
-	"publish-packages:prerelease": "lerna publish --npm-tag:prerelease",
-	"publish": "npm publish"
-  },
-  "publishConfig": {
-    "registry": "http://repository.kiosk.roche.com/api/npm/npm-test/"
+	"postinstall": "lerna clean && lerna bootstrap",
+	"publish": "lerna publish",
+	"publish-packages:prerelease": "lerna publish --npm-tag:prerelease"
   }
 }

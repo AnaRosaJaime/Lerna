@@ -13,3 +13,25 @@ npm install --global lerna
 
 The main commands in Lerna are `lerna boostrap` and `lerna publish`
 
+*bootstrap*:
+
+```
+lerna bootstrap
+```
+
+Install all the package dependencies and links any cross-dependencies:
+
+When run, this command will:
+    1. npm install all external dependencies of each package.
+    2. Symlink together all Lerna packages that are dependencies of each other.
+    3. npm run prepublish in all bootstrapped packages.
+    4. npm run prepare in all bootstrapped packages.
+
+*publish*:
+
+```
+lerna publish
+```
+
+Before publishing, Lerna determinate if a package has to be published by checking if there is any change in the repo according to the last version of git repository. Attention! It is possible to generate different versions of the same package (without changes) if the changes of the package are not pushed in the repository before publishing it.
+
